@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="StudentDataEntry.UpdateStudentUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:StudentDataEntry"
+             mc:Ignorable="d" Height="408" Width="482">
+    <Grid>
+        <ListView x:Name="lvStudentListView" Grid.Column="1">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Name" Width="130"/>
+                    <GridViewColumn Header="Branch" Width="145"/>
+                    <GridViewColumn Header="Gender" Width="100"/>
+                    <GridViewColumn Header="Delete" Width="100"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</UserControl>

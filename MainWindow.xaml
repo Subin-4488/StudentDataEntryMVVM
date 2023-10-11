@@ -1,0 +1,19 @@
+﻿<Window x:Class="StudentDataEntry.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentDataEntry"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="548" Width="1024">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Name="gAddStudentUserControl">
+            <local:AddStudentUserControl HorizontalAlignment="Left" Margin="33,46,0,45" Width="429"/>
+        </Grid>
+        <local:UpdateStudentUserControl Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Height="441" Width="478" Margin="20,0,0,0"/>
+    </Grid>
+</Window>
